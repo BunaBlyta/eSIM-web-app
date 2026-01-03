@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - eSIM World</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1 class="site-title">eSIM World</h1>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="coverage.html">Coverage</a></li>
+            <li><a href="howItWorks.html">How It Works</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-card">
+        <div class="product-detail-container">
+            <div class="product-detail-header">
+                <div class="product-detail-image" id="product-image">🌍</div>
+                <div class="product-detail-info">
+                    <h1 id="product-name">Global eSIM Plan</h1>
+                    <div class="price" id="product-price">$49.99</div>
+                    <p class="description" id="product-description">
+                        Our most comprehensive eSIM plan offering seamless connectivity across 100+ countries worldwide. Perfect for frequent travelers and digital nomads.
+                    </p>
+                    <a href="#" class="buy-now-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-specs">
+                <h3>Plan Specifications</h3>
+                <ul id="product-specs-list">
+                    <li><span>Data:</span> 15GB High-Speed</li>
+                    <li><span>Validity:</span> 30 Days</li>
+                    <li><span>Coverage:</span> 100+ Countries</li>
+                    <li><span>Network:</span> 4G/LTE</li>
+                    <li><span>Hotspot:</span> Enabled</li>
+                    <li><span>Activation:</span> Instant QR Code</li>
+                </ul>
+            </div>
+
+            <div class="product-specs">
+                <h3>What's Included</h3>
+                <ul>
+                    <li><span>24/7 Support:</span> Yes</li>
+                    <li><span>Top-up Available:</span> Yes</li>
+                    <li><span>Data Rollover:</span> No</li>
+                    <li><span>Voice Calls:</span> Data Only</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About Us</a>
+                <a href="faq.html">FAQ</a>
+                <a href="dokumentacioni.html">Dokumentacioni</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2026 eSIM World. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        const products = {
+            europe: {
+                name: 'Europe eSIM Plan',
+                price: '$19.99',
+                image: '🇪🇺',
+                description: 'Stay connected across 40+ European countries with our comprehensive Europe plan. Ideal for business travelers and tourists exploring the continent.',
+                specs: [
+                    { label: 'Data', value: '5GB High-Speed' },
+                    { label: 'Validity', value: '30 Days' },
+                    { label: 'Coverage', value: '40+ Countries' },
+                    { label: 'Network', value: '4G/LTE' },
+                    { label: 'Hotspot', value: 'Enabled' },
+                    { label: 'Activation', value: 'Instant QR Code' }
+                ]
+            },
+            usa: {
+                name: 'USA eSIM Plan',
+                price: '$24.99',
+                image: '🇺🇸',
+                description: 'Nationwide coverage across the United States with reliable 4G/LTE connectivity. Perfect for road trips and business travel.',
+                specs: [
+                    { label: 'Data', value: '10GB High-Speed' },
+                    { label: 'Validity', value: '30 Days' },
+                    { label: 'Coverage', value: 'Nationwide USA' },
+                    { label: 'Network', value: '4G/LTE' },
+                    { label: 'Hotspot', value: 'Enabled' },
+                    { label: 'Activation', value: 'Instant QR Code' }
+                ]
+            },
+            asia: {
+                name: 'Asia eSIM Plan',
+                price: '$22.99',
+                image: '🌏',
+                description: 'Explore Asia with seamless connectivity across 20+ countries. From Tokyo to Bangkok, stay connected wherever your journey takes you.',
+                specs: [
+                    { label: 'Data', value: '8GB High-Speed' },
+                    { label: 'Validity', value: '30 Days' },
+                    { label: 'Coverage', value: '20+ Countries' },
+                    { label: 'Network', value: '4G/LTE' },
+                    { label: 'Hotspot', value: 'Enabled' },
+                    { label: 'Activation', value: 'Instant QR Code' }
+                ]
+            },
+            global: {
+                name: 'Global eSIM Plan',
+                price: '$49.99',
+                image: '🌍',
+                description: 'Our most comprehensive eSIM plan offering seamless connectivity across 100+ countries worldwide. Perfect for frequent travelers and digital nomads.',
+                specs: [
+                    { label: 'Data', value: '15GB High-Speed' },
+                    { label: 'Validity', value: '30 Days' },
+                    { label: 'Coverage', value: '100+ Countries' },
+                    { label: 'Network', value: '4G/LTE' },
+                    { label: 'Hotspot', value: 'Enabled' },
+                    { label: 'Activation', value: 'Instant QR Code' }
+                ]
+            },
+            uk: {
+                name: 'UK eSIM Plan',
+                price: '$14.99',
+                image: '🇬🇧',
+                description: 'Full coverage across the United Kingdom including England, Scotland, Wales, and Northern Ireland.',
+                specs: [
+                    { label: 'Data', value: '5GB High-Speed' },
+                    { label: 'Validity', value: '14 Days' },
+                    { label: 'Coverage', value: 'United Kingdom' },
+                    { label: 'Network', value: '4G/LTE' },
+                    { label: 'Hotspot', value: 'Enabled' },
+                    { label: 'Activation', value: 'Instant QR Code' }
+                ]
+            },
+            japan: {
+                name: 'Japan eSIM Plan',
+                price: '$29.99',
+                image: '🇯🇵',
+                description: 'High-speed connectivity across Japan. Perfect for exploring Tokyo, Kyoto, Osaka, and beyond.',
+                specs: [
+                    { label: 'Data', value: '10GB High-Speed' },
+                    { label: 'Validity', value: '30 Days' },
+                    { label: 'Coverage', value: 'Japan Nationwide' },
+                    { label: 'Network', value: '4G/LTE' },
+                    { label: 'Hotspot', value: 'Enabled' },
+                    { label: 'Activation', value: 'Instant QR Code' }
+                ]
+            }
+        };
+
+        function loadProductDetails() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id') || 'global';
+            const product = products[productId] || products.global;
+
+            document.getElementById('product-name').textContent = product.name;
+            document.getElementById('product-price').textContent = product.price;
+            document.getElementById('product-image').textContent = product.image;
+            document.getElementById('product-description').textContent = product.description;
+
+            const specsList = document.getElementById('product-specs-list');
+            specsList.innerHTML = product.specs.map(spec => 
+                `<li><span>${spec.label}:</span> ${spec.value}</li>`
+            ).join('');
+
+            document.title = `${product.name} - eSIM World`;
+        }
+
+        loadProductDetails();
+    </script>
+</body>
+</html>
