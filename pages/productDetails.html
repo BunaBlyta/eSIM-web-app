@@ -76,92 +76,135 @@
 
     <script src="../js/script.js"></script>
     <script>
-        const products = {
-            europe: {
-                name: 'Europe eSIM Plan',
-                price: '$19.99',
-                image: '🇪🇺',
-                description: 'Stay connected across 40+ European countries with our comprehensive Europe plan. Ideal for business travelers and tourists exploring the continent.',
-                specs: [
-                    { label: 'Data', value: '5GB High-Speed' },
-                    { label: 'Validity', value: '30 Days' },
-                    { label: 'Coverage', value: '40+ Countries' },
-                    { label: 'Network', value: '4G/LTE' },
-                    { label: 'Hotspot', value: 'Enabled' },
-                    { label: 'Activation', value: 'Instant QR Code' }
-                ]
-            },
-            usa: {
-                name: 'USA eSIM Plan',
-                price: '$24.99',
-                image: '🇺🇸',
-                description: 'Nationwide coverage across the United States with reliable 4G/LTE connectivity. Perfect for road trips and business travel.',
-                specs: [
-                    { label: 'Data', value: '10GB High-Speed' },
-                    { label: 'Validity', value: '30 Days' },
-                    { label: 'Coverage', value: 'Nationwide USA' },
-                    { label: 'Network', value: '4G/LTE' },
-                    { label: 'Hotspot', value: 'Enabled' },
-                    { label: 'Activation', value: 'Instant QR Code' }
-                ]
-            },
-            asia: {
-                name: 'Asia eSIM Plan',
-                price: '$22.99',
-                image: '🌏',
-                description: 'Explore Asia with seamless connectivity across 20+ countries. From Tokyo to Bangkok, stay connected wherever your journey takes you.',
-                specs: [
-                    { label: 'Data', value: '8GB High-Speed' },
-                    { label: 'Validity', value: '30 Days' },
-                    { label: 'Coverage', value: '20+ Countries' },
-                    { label: 'Network', value: '4G/LTE' },
-                    { label: 'Hotspot', value: 'Enabled' },
-                    { label: 'Activation', value: 'Instant QR Code' }
-                ]
-            },
-            global: {
-                name: 'Global eSIM Plan',
-                price: '$49.99',
-                image: '🌍',
-                description: 'Our most comprehensive eSIM plan offering seamless connectivity across 100+ countries worldwide. Perfect for frequent travelers and digital nomads.',
-                specs: [
-                    { label: 'Data', value: '15GB High-Speed' },
-                    { label: 'Validity', value: '30 Days' },
-                    { label: 'Coverage', value: '100+ Countries' },
-                    { label: 'Network', value: '4G/LTE' },
-                    { label: 'Hotspot', value: 'Enabled' },
-                    { label: 'Activation', value: 'Instant QR Code' }
-                ]
-            },
-            uk: {
-                name: 'UK eSIM Plan',
-                price: '$14.99',
-                image: '🇬🇧',
-                description: 'Full coverage across the United Kingdom including England, Scotland, Wales, and Northern Ireland.',
-                specs: [
-                    { label: 'Data', value: '5GB High-Speed' },
-                    { label: 'Validity', value: '14 Days' },
-                    { label: 'Coverage', value: 'United Kingdom' },
-                    { label: 'Network', value: '4G/LTE' },
-                    { label: 'Hotspot', value: 'Enabled' },
-                    { label: 'Activation', value: 'Instant QR Code' }
-                ]
-            },
-            japan: {
-                name: 'Japan eSIM Plan',
-                price: '$29.99',
-                image: '🇯🇵',
-                description: 'High-speed connectivity across Japan. Perfect for exploring Tokyo, Kyoto, Osaka, and beyond.',
-                specs: [
-                    { label: 'Data', value: '10GB High-Speed' },
-                    { label: 'Validity', value: '30 Days' },
-                    { label: 'Coverage', value: 'Japan Nationwide' },
-                    { label: 'Network', value: '4G/LTE' },
-                    { label: 'Hotspot', value: 'Enabled' },
-                    { label: 'Activation', value: 'Instant QR Code' }
-                ]
-            }
-        };
+     const products = {
+    uk: {
+        name: 'UK eSIM Plan',
+        price: '$14.99',
+        image: '🇬🇧',
+        description: 'Full coverage across the United Kingdom including England, Scotland, Wales, and Northern Ireland.',
+        specs: [
+            { label: 'Data', value: '5GB High-Speed' },
+            { label: 'Validity', value: '14 Days' },
+            { label: 'Coverage', value: 'United Kingdom' },
+            { label: 'Network', value: '4G/LTE' },
+            { label: 'Hotspot', value: 'Enabled' },
+            { label: 'Activation', value: 'Instant QR Code' }
+        ]
+    },
+    kosovo: {
+        name: 'Kosovo eSIM Plan',
+        price: '€9.99',
+        image: '🇽🇰',
+        description: 'Full coverage across Kosovo including Pristina, Peja, Gjakova, and Prizren.',
+        specs: [
+            { label: 'Data', value: '7GB High-Speed' },
+            { label: 'Validity', value: '14 Days' },
+            { label: 'Coverage', value: 'Kosovo' },
+            { label: 'Network', value: '4G/LTE' },
+            { label: 'Hotspot', value: 'Enabled' },
+            { label: 'Activation', value: 'Instant QR Code' }
+        ]
+    },
+    albania: {
+        name: 'Albania eSIM Plan',
+        price: '€11.99',
+        image: '🇦🇱',
+        description: 'Coverage across Albania including Tirana, Shkodra, and Durrës.',
+        specs: [
+            { label: 'Data', value: '8GB High-Speed' },
+            { label: 'Validity', value: '14 Days' },
+            { label: 'Coverage', value: 'Albania' },
+            { label: 'Network', value: '4G/LTE' },
+            { label: 'Hotspot', value: 'Enabled' },
+            { label: 'Activation', value: 'Instant QR Code' }
+        ]
+    },
+    turkey: {
+        name: 'Turkey eSIM Plan',
+        price: '$14.99',
+        image: '🇹🇷',
+        description: 'Full coverage across Turkey including Istanbul, Ankara, and Izmir.',
+        specs: [
+            { label: 'Data', value: '10GB High-Speed' },
+            { label: 'Validity', value: '15 Days' },
+            { label: 'Coverage', value: 'Turkey' },
+            { label: 'Network', value: '4G/LTE' },
+            { label: 'Hotspot', value: 'Enabled' },
+            { label: 'Activation', value: 'Instant QR Code' }
+        ]
+    },
+    balkan: {
+        name: 'Balkan eSIM Plan',
+        price: '€19.99',
+        image: '🌍',
+        description: 'Multi-country coverage including Kosovo, Albania, Montenegro, Bosnia & Herzegovina, Serbia, North Macedonia.',
+        specs: [
+            { label: 'Data', value: '10GB High-Speed' },
+            { label: 'Validity', value: '15 Days' },
+            { label: 'Coverage', value: 'Balkans' },
+            { label: 'Network', value: '4G/LTE' },
+            { label: 'Hotspot', value: 'Enabled' },
+            { label: 'Activation', value: 'Instant QR Code' }
+        ]
+    },
+    germany: {
+        name: 'Germany eSIM Plan',
+        price: '€24.99',
+        image: '🇩🇪',
+        description: 'Full coverage across Germany including Berlin, Munich, Frankfurt, and Hamburg.',
+        specs: [
+            { label: 'Data', value: '10GB High-Speed' },
+            { label: 'Validity', value: '30 Days' },
+            { label: 'Coverage', value: 'Germany' },
+            { label: 'Network', value: '4G/LTE' },
+            { label: 'Hotspot', value: 'Enabled' },
+            { label: 'Activation', value: 'Instant QR Code' }
+        ]
+    },
+    switzerland: {
+        name: 'Switzerland eSIM Plan',
+        price: 'CHF 29.99',
+        image: '🇨🇭',
+        description: 'Full coverage across Switzerland including Zurich, Geneva, Basel, and Bern.',
+        specs: [
+            { label: 'Data', value: '8GB High-Speed' },
+            { label: 'Validity', value: '30 Days' },
+            { label: 'Coverage', value: 'Switzerland' },
+            { label: 'Network', value: '4G/LTE' },
+            { label: 'Hotspot', value: 'Enabled' },
+            { label: 'Activation', value: 'Instant QR Code' }
+        ]
+    },
+    france: {
+        name: 'France eSIM Plan',
+        price: '€22.99',
+        image: '🇫🇷',
+        description: 'Full coverage across France including Paris, Marseille, Lyon, and Toulouse.',
+        specs: [
+            { label: 'Data', value: '10GB High-Speed' },
+            { label: 'Validity', value: '30 Days' },
+            { label: 'Coverage', value: 'France' },
+            { label: 'Network', value: '4G/LTE' },
+            { label: 'Hotspot', value: 'Enabled' },
+            { label: 'Activation', value: 'Instant QR Code' }
+        ]
+    },
+    europe: {
+        name: 'Europe eSIM Plan',
+        price: '€19.99',
+        image: '🇪🇺',
+        description: 'Multi-country coverage across all EU countries.',
+        specs: [
+            { label: 'Data', value: '10GB High-Speed' },
+            { label: 'Validity', value: '15 Days' },
+            { label: 'Coverage', value: 'EU Countries' },
+            { label: 'Network', value: '4G/LTE' },
+            { label: 'Hotspot', value: 'Enabled' },
+            { label: 'Activation', value: 'Instant QR Code' }
+        ]
+    }
+};
+
 
         function loadProductDetails() {
             const urlParams = new URLSearchParams(window.location.search);

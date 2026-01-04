@@ -19,14 +19,16 @@ body {
 .site-title {
     text-align: center;
     padding: 20px 0 15px;
-    color: #f9c6c6;
+    color: #b1f5c3;
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 2px;
 }
 
 .navbar {
- background: linear-gradient(to left, #e26ec3,  #e09f9f);
+ background: 
+  linear-gradient(rgba(94, 206, 150, 0.6), rgba(16, 131, 58, 0.6)), #b1f5c3; 
+  background-blend-mode: overlay;
     border-radius: 12px;
     padding: 0 20px;   
     margin-bottom: 20px;
@@ -76,7 +78,9 @@ body {
 
 .main-card {
   flex: 1;
-  background: linear-gradient(to left,  #ed9898, #e18aca) ; 
+  background: 
+  linear-gradient(rgba(94, 206, 150, 0.6), rgba(16, 131, 58, 0.6)), #b1f5c3; 
+  background-blend-mode: overlay;
   border-radius: 16px;
   padding: 40px;
   margin-bottom: 20px;
@@ -181,35 +185,43 @@ body {
     padding: 40px 0;
 }
 
-.feature-card {
-    background: linear-gradient(135deg, rgba(235, 185, 149, 0.1), rgba(249, 211, 211, 0.2));
+.feature-card1 {
+    background: 
+        linear-gradient(rgba(92, 176, 135, 0.998), rgba(21, 47, 142, 0.256)), /* top layer */
+        #12d2dc; /* base color */
+
+    background-blend-mode: multiply;
     padding: 30px;
     border-radius: 12px;
     text-align: center;
     transition: transform 0.3s ease;
 }
 
-.feature-card:hover {
+.feature-card1:hover {
     transform: translateY(-5px);
 }
 
-.feature-card .icon {
+.feature-card1 .icon {
     font-size: 3rem;
     margin-bottom: 15px;
 }
 
-.feature-card h3 {
+.feature-card1 h3 {
      color:  #0e4b1e;
     margin-bottom: 10px;
 }
 
-.feature-card p {
+.feature-card1 p {
      color:  #0e4b1e;
     line-height: 1.5;
 }
 
 .feature-card2 {
-    background: linear-gradient(135deg, rgba(249, 211, 211, 0.2) , rgba(235, 185, 149, 0.1));
+     background: 
+        linear-gradient(rgb(255, 243, 12), rgba(152, 109, 8, 0.502)), /* top layer */
+        #ecf324; /* base color */
+
+    background-blend-mode: multiply;
     padding: 30px;
     border-radius: 12px;
     text-align: center;
@@ -226,13 +238,78 @@ body {
 }
 
 .feature-card2 h3 {
-     color: #0e4b1e;
+     color: #6c5013;
     margin-bottom: 10px;
     
 }
 
 .feature-card2 p {
+     color: #52460a;
+    line-height: 1.5;
+}
+
+.feature-card3 {
+     background: 
+        linear-gradient(rgba(232, 186, 153, 0.6), rgba(42, 87, 13, 0.6)),
+        #29d30b;
+
+    background-blend-mode: multiply;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card3:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card3 .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.feature-card3 h3 {
+     color: #17622b;
+    margin-bottom: 10px;
+    
+}
+
+.feature-card3 p {
      color: #0e4b1e;
+    line-height: 1.5;
+}
+
+.feature-card4 {
+     background: 
+        linear-gradient(rgba(39, 122, 167, 0.6), rgba(14, 37, 106, 0.587)), /* top layer */
+        #120fb8; /* base color */
+
+    background-blend-mode: multiply;
+    /* background: linear-gradient(135deg, rgba(235, 185, 149, 0.1),rgba(249, 211, 211, 0.2) ); */
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card4:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card4 .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.feature-card4 h3 {
+     color: #8a76be;
+    margin-bottom: 10px;
+    
+}
+
+.feature-card4 p {
+     color: #b2aedc;
     line-height: 1.5;
 }
 
@@ -548,6 +625,22 @@ body {
     margin-bottom: 20px;
     line-height: 1.8;
 }
+
+.product-image {
+    width: 100%;
+    height: 50px; /* or whatever height your cards use */
+    overflow: hidden;
+    border-radius: 12px 12px 0 0; /* optional, keeps rounded top corners */
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fills the container without stretching */
+    display: block;
+}
+
+
 
 .product-detail-container {
     max-width: 900px;
