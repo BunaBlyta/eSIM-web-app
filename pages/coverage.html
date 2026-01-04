@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coverage - eSIM World</title>
     <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <h1 class="site-title">eSIM World</h1>
@@ -22,6 +28,9 @@
         <h2 class="page-title">Global Coverage</h2>
         <p style="text-align: center; color: #666; margin-bottom: 30px;">We provide eSIM coverage in over 190 countries worldwide. Here are some of our most popular destinations:</p>
         
+        <div id="map" style="width:50%;height:500px;border-radius: 15px;"></div>
+
+
         <div class="countries-grid">
             <div class="country-card">
                 <div class="flag">🇺🇸</div>

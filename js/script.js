@@ -54,3 +54,33 @@ function setActiveNavLink() {
         }
     });
 }
+
+// Initialize map
+const map = L.map('map').setView([20, 0], 2); // world view
+
+// Optional: base tiles for context
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© OpenStreetMap contributors'
+}).addTo(map);
+
+// List of countries to color (ISO 3166-1 alpha-3 codes)
+const selectedCountries = ['USA', 'FRA', 'BRA', 'IND']; // example
+
+// Styling function
+function style(feature) {
+  const isSelected = selectedCountries.includes(feature.id); // 'id' in GeoJSON is ISO code
+  return {
+    fillColor: isSelected ? '#ab438f' : '#ffffff',
+    weight: 1,
+    color: '#000000',
+    fillOpacity: 0.7
+  };
+}
+
+// Load GeoJSON (world countries)
+fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json')
+  .then(res => res.json())
+  .then(data => {
+    L.geoJSON(data, { style: style }).addTo(map);
+  });
+
