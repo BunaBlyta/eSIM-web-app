@@ -56,15 +56,17 @@ function setActiveNavLink() {
 }
 
 // Initialize map
-const map = L.map('map').setView([20, 0], 2); // world view
+// Initialize map centered on Europe
+const map = L.map('map').setView([54, 15], 4); // [lat, lng], zoom
+
 
 // Optional: base tiles for context
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
-// List of countries to color (ISO 3166-1 alpha-3 codes)
-const selectedCountries = ['USA', 'FRA', 'BRA', 'IND']; // example
+const selectedCountries = ['ALB','MNE','BIH','MKD','DEU','CHE','FRA','TUR'];
+
 
 // Styling function
 function style(feature) {
@@ -83,4 +85,3 @@ fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.g
   .then(data => {
     L.geoJSON(data, { style: style }).addTo(map);
   });
-
