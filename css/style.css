@@ -543,7 +543,7 @@ body {
 
 .faq-question {
     padding: 20px;
-    background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 159, 67, 0.1));
+    background: linear-gradient(135deg, #ff6b6b, #ff9f43);
     cursor: pointer;
     font-weight: 600;
     color: #333;
@@ -554,7 +554,7 @@ body {
 }
 
 .faq-question:hover {
-    background: linear-gradient(135deg, rgba(255, 107, 107, 0.2), rgba(255, 159, 67, 0.2));
+    background: linear-gradient(135deg, #823737, #7e4e21);
 }
 
 .faq-question .toggle-icon {
@@ -571,6 +571,7 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
+    background: linear-gradient(135deg, #fc9e9e, #facea6)
 }
 
 .faq-item.active .faq-answer {
@@ -579,7 +580,7 @@ body {
 }
 
 .faq-answer p {
-    color: #666;
+    color: #2b1e1e;
     line-height: 1.6;
 }
 
@@ -655,7 +656,7 @@ body {
 }
 
 .contact-info p {
-    color: #666;
+    color: #3c3535;
     margin-bottom: 10px;
     line-height: 1.6;
 }
@@ -666,7 +667,7 @@ body {
 }
 
 .about-content p {
-    color: #666;
+    color: #382929;
     line-height: 1.8;
     margin-bottom: 20px;
     font-size: 1.1rem;
@@ -674,6 +675,11 @@ body {
 
 .about-content h2 {
     color: #333;
+    margin: 30px 0 15px;
+}
+
+.about-content li {
+    color: #471c1c;
     margin: 30px 0 15px;
 }
 
@@ -688,13 +694,13 @@ body {
 }
 
 .terms-content p {
-    color: #666;
+    color: #3b1616;
     line-height: 1.8;
     margin-bottom: 15px;
 }
 
 .terms-content ul {
-    color: #666;
+    color: #362727;
     margin-left: 20px;
     margin-bottom: 20px;
     line-height: 1.8;
