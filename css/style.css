@@ -735,16 +735,26 @@ body {
 }
 
 .product-detail-image {
-    flex: 1;
-    min-width: 300px;
-    height: 300px;
-    background: linear-gradient(135deg, #ff6b6b, #feca57);
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 8rem;
+    width: 100%;
+    max-width: 250px;      /* optional, adjust to card size */
+    height: 250px;         /* fixed height for the card */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
 }
+
+.product-detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* makes image fill container */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.product-detail-image img:hover {
+    transform: scale(1.1);  /* zoom on hover */
+}
+
 
 .product-detail-info {
     flex: 1;
@@ -864,6 +874,62 @@ body {
   padding: 1.5rem;
   border-radius: 15px;
 }
+
+/* Table container */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Table header */
+table thead tr {
+    background: linear-gradient(135deg, #bf2e2e4d, #7d027548);
+    color: #fff;
+    text-align: left;
+}
+
+table thead th {
+    padding: 12px 15px;
+}
+
+/* Table body rows */
+table tbody tr {
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.765), rgba(255, 158, 67, 0.831));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+table tbody tr:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Table cells */
+table td {
+    padding: 12px 15px;
+    color: #2d2727;
+}
+
+/* Alternate row colors for better readability */
+table tbody tr:nth-child(even) {
+    background: linear-gradient(135deg, rgba(206, 159, 159, 0.818), rgba(255, 158, 67, 0.842));
+}
+
+/* Optional: Add subtle border between cells */
+table th, table td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive text wrapping */
+table td {
+    word-wrap: break-word;
+}
+
 
 
 @media (max-width: 768px) {

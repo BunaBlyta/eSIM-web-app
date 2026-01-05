@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detajet - Pika eSIM</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <h1 class="site-title">Pika eSIM</h1>
 
@@ -24,7 +28,10 @@
     <main class="main-card">
         <div class="product-detail-container">
             <div class="product-detail-header">
-                <div class="product-detail-image" id="product-image">🌍</div>
+                <div class="product-detail-image">
+                    <img id="product-img" src="" alt="Produkti" />
+                </div>
+
                 <div class="product-detail-info">
                     <h1 id="product-name">Oferta EU eSIM</h1>
                     <div class="price" id="product-price">€19.99</div>
@@ -48,14 +55,33 @@
             </div>
 
             <div class="product-specs">
-                <h3>Çfarë përfshihet</h3>
-                <ul>
-                    <li><span>Asistencë 24/7:</span> Po</li>
-                    <li><span>Rimbushje e Disponueshme:</span> Po</li>
-                    <li><span>Ruajtja e të Dhënave:</span> Jo</li>
-                    <li><span>Thirrjet me zë:</span> Vetëm me Internet</li>
-                </ul>
+
+                <div class="product-specs">
+                    <h3>Çfarë përfshihet</h3>
+                    <table class="product-specs-table">
+                        <tbody>
+                            <tr>
+                                <td>Asistencë 24/7</td>
+                                <td>Po</td>
+                            </tr>
+                            <tr>
+                                <td>Rimbushje e Disponueshme</td>
+                                <td>Po</td>
+                            </tr>
+                            <tr>
+                                <td>Ruajtja e të Dhënave</td>
+                                <td>Jo</td>
+                            </tr>
+                            <tr>
+                                <td>Thirrjet me zë</td>
+                                <td>Vetëm me Internet</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
+
         </div>
     </main>
 
@@ -64,9 +90,9 @@
             <div class="footer-links">
                 <a href="contact.html">Na Kontaktoni</a>
                 <a href="about.html">Për ne/a>
-                <a href="faq.html">FAQ</a>
-                <a href="dokumentacioni.html">Dokumentacioni</a>
-                <a href="terms.html">Politikat e Përdorimit</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="dokumentacioni.html">Dokumentacioni</a>
+                    <a href="terms.html">Politikat e Përdorimit</a>
             </div>
             <div class="footer-copyright">
                 &copy; 2026 Pika eSIM. Të gjitha të drejtat e rezervuara.
@@ -76,168 +102,168 @@
 
     <script src="../js/script.js"></script>
     <script>
-     const products = {
- kosovo: {
-        name: 'Oferta Kosovë',
-        price: '€9.99',
-        image: '🇽🇰',
-        description: 'Shtrirje e plotë në Kosovë, duke përfshirë Prishtinën, Pejën, Gjakovën dhe Prizrenin.',
-        specs: [
-            { label: 'Interneti', value: '7GB High-Speed' },
-            { label: 'Kohëzgjatja', value: '14 Ditë' },
-            { label: 'Shtrirja', value: 'Kosovë' },
-            { label: 'Rrjeti', value: '4G/LTE' },
-            { label: 'Hotspot', value: 'Aktivizuar' },
-            { label: 'Aktivizimi', value: 'QR Code Instant' }
-        ],
-        included: [
-            { label: 'Asistencë 24/7', value: 'Po' },
-            { label: 'Rimbushje e Disponueshme', value: 'Po' },
-            { label: 'Ruajtja e të Dhënave', value: 'Jo' },
-            { label: 'Thirrjet me zë', value: 'Vetëm me Internet' }
-        ]
-    },
-    albania: {
-        name: 'Oferta Shqipëri',
-        price: '€11.99',
-        image: '🇦🇱',
-        description: 'Shtrirje e plotë në Shqipëri, duke përfshirë Tiranën, Shkodrën dhe Durrësin.',
-        specs: [
-            { label: 'Interneti', value: '8GB High-Speed' },
-            { label: 'Kohëzgjatja', value: '14 Ditë' },
-            { label: 'Shtrirja', value: 'Shqipëri' },
-            { label: 'Rrjeti', value: '4G/LTE' },
-            { label: 'Hotspot', value: 'Aktivizuar' },
-            { label: 'Aktivizimi', value: 'QR Code Instant' }
-        ],
-        included: [
-            { label: 'Asistencë 24/7', value: 'Po' },
-            { label: 'Rimbushje e Disponueshme', value: 'Po' },
-            { label: 'Ruajtja e të Dhënave', value: 'Jo' },
-            { label: 'Thirrjet me zë', value: 'Vetëm me Internet' }
-        ]
-    },
-    turkey: {
-        name: 'Oferta Turqi',
-        price: '$14.99',
-        image: '🇹🇷',
-        description: 'Shtrirje e plotë në Turqi, duke përfshirë Stambollin, Ankaran dhe Izmirin.',
-        specs: [
-            { label: 'Interneti', value: '10GB High-Speed' },
-            { label: 'Kohëzgjatja', value: '15 Ditë' },
-            { label: 'Shtrirja', value: 'Turqi' },
-            { label: 'Rrjeti', value: '4G/LTE' },
-            { label: 'Hotspot', value: 'Aktivizuar' },
-            { label: 'Aktivizimi', value: 'QR Code Instant' }
-        ],
-        included: [
-            { label: 'Asistencë 24/7', value: 'Po' },
-            { label: 'Rimbushje e Disponueshme', value: 'Po' },
-            { label: 'Ruajtja e të Dhënave', value: 'Jo' },
-            { label: 'Thirrjet me zë', value: 'Vetëm me Internet' }
-        ]
-    },
-    balkan: {
-        name: 'Oferta Ballkan',
-        price: '€19.99',
-        image: '🌍',
-        description: 'Shtrirje multi-vendore, duke përfshirë Kosovën, Shqipërinë, Malin e Zi, Bosnjë e Hercegovinën, Serbinë dhe Maqedoninë e Veriut.',
-        specs: [
-            { label: 'Interneti', value: '10GB High-Speed' },
-            { label: 'Kohëzgjatja', value: '15 Ditë' },
-            { label: 'Shtrirja', value: 'Ballkani' },
-            { label: 'Rrjeti', value: '4G/LTE' },
-            { label: 'Hotspot', value: 'Aktivizuar' },
-            { label: 'Aktivizimi', value: 'QR Code Instant' }
-        ],
-        included: [
-            { label: 'Asistencë 24/7', value: 'Po' },
-            { label: 'Rimbushje e Disponueshme', value: 'Po' },
-            { label: 'Ruajtja e të Dhënave', value: 'Jo' },
-            { label: 'Thirrjet me zë', value: 'Vetëm me Internet' }
-        ]
-    },
-    germany: {
-        name: 'Oferta Gjermani',
-        price: '€24.99',
-        image: '🇩🇪',
-        description: 'Shtrirje e plotë në Gjermani, duke përfshirë Berlinin, Mynihun, Frankfurtin dhe Hamburgun.',
-        specs: [
-            { label: 'Interneti', value: '10GB High-Speed' },
-            { label: 'Kohëzgjatja', value: '30 Ditë' },
-            { label: 'Shtrirja', value: 'Gjermani' },
-            { label: 'Rrjeti', value: '4G/LTE' },
-            { label: 'Hotspot', value: 'Aktivizuar' },
-            { label: 'Aktivizimi', value: 'QR Code Instant' }
-        ],
-        included: [
-            { label: 'Asistencë 24/7', value: 'Po' },
-            { label: 'Rimbushje e Disponueshme', value: 'Po' },
-            { label: 'Ruajtja e të Dhënave', value: 'Jo' },
-            { label: 'Thirrjet me zë', value: 'Vetëm me Internet' }
-        ]
-    },
-    switzerland: {
-        name: 'Oferta Zvicërr',
-        price: 'CHF 29.99',
-        image: '🇨🇭',
-        description: 'Shtrirje e plotë në Zvicër, duke përfshirë Cyrihun, Gjenevën, Bazelin dhe Bernën.',
-        specs: [
-            { label: 'Interneti', value: '8GB High-Speed' },
-            { label: 'Kohëzgjatja', value: '30 Ditë' },
-            { label: 'Shtrirja', value: 'Zvicërr' },
-            { label: 'Rrjeti', value: '4G/LTE' },
-            { label: 'Hotspot', value: 'Aktivizuar' },
-            { label: 'Aktivizimi', value: 'QR Code Instant' }
-        ],
-        included: [
-            { label: 'Asistencë 24/7', value: 'Po' },
-            { label: 'Rimbushje e Disponueshme', value: 'Po' },
-            { label: 'Ruajtja e të Dhënave', value: 'Jo' },
-            { label: 'Thirrjet me zë', value: 'Vetëm me Internet' }
-        ]
-    },
-    france: {
-        name: 'Oferta Francë',
-        price: '€22.99',
-        image: '🇫🇷',
-        description: 'Shtrirje e plotë në Francë, duke përfshirë Parisin, Marselin, Lionin dhe Tuluzën.',
-        specs: [
-            { label: 'Interneti', value: '10GB High-Speed' },
-            { label: 'Kohëzgjatja', value: '30 Ditë' },
-            { label: 'Shtrirja', value: 'Francë' },
-            { label: 'Rrjeti', value: '4G/LTE' },
-            { label: 'Hotspot', value: 'Aktivizuar' },
-            { label: 'Aktivizimi', value: 'QR Code Instant' }
-        ],
-        included: [
-            { label: 'Asistencë 24/7', value: 'Po' },
-            { label: 'Rimbushje e Disponueshme', value: 'Po' },
-            { label: 'Ruajtja e të Dhënave', value: 'Jo' },
-            { label: 'Thirrjet me zë', value: 'Vetëm me Internet' }
-        ]
-    },
-    europe: {
-        name: 'Oferta Europë',
-        price: '€19.99',
-        image: 'EU',
-        description: 'Shtrirje multi-vendore në të gjitha vendet e BE-së.',
-        specs: [
-            { label: 'Interneti', value: '10GB High-Speed' },
-            { label: 'Kohëzgjatja', value: '15 Ditë' },
-            { label: 'Shtrirja', value: 'Vendet e BE-së' },
-            { label: 'Rrjeti', value: '4G/LTE' },
-            { label: 'Hotspot', value: 'Aktivizuar' },
-            { label: 'Aktivizimi', value: 'QR Code Instant' }
-        ],
-        included: [
-            { label: 'Asistencë 24/7', value: 'Po' },
-            { label: 'Rimbushje e Disponueshme', value: 'Po' },
-            { label: 'Ruajtja e të Dhënave', value: 'Jo' },
-            { label: 'Thirrjet me zë', value: 'Vetëm me Internet' }
-        ]
-    }
-};
+        const products = {
+            kosovo: {
+                name: 'Oferta Kosovë',
+                price: '€9.99',
+                image: '../images/kosova1.jpg',
+                description: 'Shtrirje e plotë në Kosovë, duke përfshirë Prishtinën, Pejën, Gjakovën dhe Prizrenin.',
+                specs: [
+                    { label: 'Interneti', value: '7GB High-Speed' },
+                    { label: 'Kohëzgjatja', value: '14 Ditë' },
+                    { label: 'Shtrirja', value: 'Kosovë' },
+                    { label: 'Rrjeti', value: '4G/LTE' },
+                    { label: 'Hotspot', value: 'Aktivizuar' },
+                    { label: 'Aktivizimi', value: 'QR Code Instant' }
+                ],
+                included: [
+                    { label: 'Asistencë 24/7', value: 'Po' },
+                    { label: 'Rimbushje e Disponueshme', value: 'Po' },
+                    { label: 'Ruajtja e të Dhënave', value: 'Jo' },
+                    { label: 'Thirrjet me zë', value: 'Vetëm me Internet' }
+                ]
+            },
+            albania: {
+                name: 'Oferta Shqipëri',
+                price: '€11.99',
+                image: '../images/shqiperia1.jpg',
+                description: 'Shtrirje e plotë në Shqipëri, duke përfshirë Tiranën, Shkodrën dhe Durrësin.',
+                specs: [
+                    { label: 'Interneti', value: '8GB High-Speed' },
+                    { label: 'Kohëzgjatja', value: '14 Ditë' },
+                    { label: 'Shtrirja', value: 'Shqipëri' },
+                    { label: 'Rrjeti', value: '4G/LTE' },
+                    { label: 'Hotspot', value: 'Aktivizuar' },
+                    { label: 'Aktivizimi', value: 'QR Code Instant' }
+                ],
+                included: [
+                    { label: 'Asistencë 24/7', value: 'Po' },
+                    { label: 'Rimbushje e Disponueshme', value: 'Po' },
+                    { label: 'Ruajtja e të Dhënave', value: 'Jo' },
+                    { label: 'Thirrjet me zë', value: 'Vetëm me Internet' }
+                ]
+            },
+            turkey: {
+                name: 'Oferta Turqi',
+                price: '$14.99',
+                image: '../images/turqia1.png',
+                description: 'Shtrirje e plotë në Turqi, duke përfshirë Stambollin, Ankaran dhe Izmirin.',
+                specs: [
+                    { label: 'Interneti', value: '10GB High-Speed' },
+                    { label: 'Kohëzgjatja', value: '15 Ditë' },
+                    { label: 'Shtrirja', value: 'Turqi' },
+                    { label: 'Rrjeti', value: '4G/LTE' },
+                    { label: 'Hotspot', value: 'Aktivizuar' },
+                    { label: 'Aktivizimi', value: 'QR Code Instant' }
+                ],
+                included: [
+                    { label: 'Asistencë 24/7', value: 'Po' },
+                    { label: 'Rimbushje e Disponueshme', value: 'Po' },
+                    { label: 'Ruajtja e të Dhënave', value: 'Jo' },
+                    { label: 'Thirrjet me zë', value: 'Vetëm me Internet' }
+                ]
+            },
+            balkan: {
+                name: 'Oferta Ballkan',
+                price: '€19.99',
+                image: '../images/ballkani1.jpg',
+                description: 'Shtrirje multi-vendore, duke përfshirë Kosovën, Shqipërinë, Malin e Zi, Bosnjë e Hercegovinën, Serbinë dhe Maqedoninë e Veriut.',
+                specs: [
+                    { label: 'Interneti', value: '10GB High-Speed' },
+                    { label: 'Kohëzgjatja', value: '15 Ditë' },
+                    { label: 'Shtrirja', value: 'Ballkani' },
+                    { label: 'Rrjeti', value: '4G/LTE' },
+                    { label: 'Hotspot', value: 'Aktivizuar' },
+                    { label: 'Aktivizimi', value: 'QR Code Instant' }
+                ],
+                included: [
+                    { label: 'Asistencë 24/7', value: 'Po' },
+                    { label: 'Rimbushje e Disponueshme', value: 'Po' },
+                    { label: 'Ruajtja e të Dhënave', value: 'Jo' },
+                    { label: 'Thirrjet me zë', value: 'Vetëm me Internet' }
+                ]
+            },
+            germany: {
+                name: 'Oferta Gjermani',
+                price: '€24.99',
+                image: '../images/gjermania1.jpg',
+                description: 'Shtrirje e plotë në Gjermani, duke përfshirë Berlinin, Mynihun, Frankfurtin dhe Hamburgun.',
+                specs: [
+                    { label: 'Interneti', value: '10GB High-Speed' },
+                    { label: 'Kohëzgjatja', value: '30 Ditë' },
+                    { label: 'Shtrirja', value: 'Gjermani' },
+                    { label: 'Rrjeti', value: '4G/LTE' },
+                    { label: 'Hotspot', value: 'Aktivizuar' },
+                    { label: 'Aktivizimi', value: 'QR Code Instant' }
+                ],
+                included: [
+                    { label: 'Asistencë 24/7', value: 'Po' },
+                    { label: 'Rimbushje e Disponueshme', value: 'Po' },
+                    { label: 'Ruajtja e të Dhënave', value: 'Jo' },
+                    { label: 'Thirrjet me zë', value: 'Vetëm me Internet' }
+                ]
+            },
+            switzerland: {
+                name: 'Oferta Zvicërr',
+                price: 'CHF 29.99',
+                image: '../images/zvicrra1.jpg',
+                description: 'Shtrirje e plotë në Zvicër, duke përfshirë Cyrihun, Gjenevën, Bazelin dhe Bernën.',
+                specs: [
+                    { label: 'Interneti', value: '8GB High-Speed' },
+                    { label: 'Kohëzgjatja', value: '30 Ditë' },
+                    { label: 'Shtrirja', value: 'Zvicërr' },
+                    { label: 'Rrjeti', value: '4G/LTE' },
+                    { label: 'Hotspot', value: 'Aktivizuar' },
+                    { label: 'Aktivizimi', value: 'QR Code Instant' }
+                ],
+                included: [
+                    { label: 'Asistencë 24/7', value: 'Po' },
+                    { label: 'Rimbushje e Disponueshme', value: 'Po' },
+                    { label: 'Ruajtja e të Dhënave', value: 'Jo' },
+                    { label: 'Thirrjet me zë', value: 'Vetëm me Internet' }
+                ]
+            },
+            france: {
+                name: 'Oferta Francë',
+                price: '€22.99',
+                image: '../images/franca1.jpg',
+                description: 'Shtrirje e plotë në Francë, duke përfshirë Parisin, Marselin, Lionin dhe Tuluzën.',
+                specs: [
+                    { label: 'Interneti', value: '10GB High-Speed' },
+                    { label: 'Kohëzgjatja', value: '30 Ditë' },
+                    { label: 'Shtrirja', value: 'Francë' },
+                    { label: 'Rrjeti', value: '4G/LTE' },
+                    { label: 'Hotspot', value: 'Aktivizuar' },
+                    { label: 'Aktivizimi', value: 'QR Code Instant' }
+                ],
+                included: [
+                    { label: 'Asistencë 24/7', value: 'Po' },
+                    { label: 'Rimbushje e Disponueshme', value: 'Po' },
+                    { label: 'Ruajtja e të Dhënave', value: 'Jo' },
+                    { label: 'Thirrjet me zë', value: 'Vetëm me Internet' }
+                ]
+            },
+            europe: {
+                name: 'Oferta Europë',
+                price: '€19.99',
+                image: '../images/italia1.jpg',
+                description: 'Shtrirje multi-vendore në të gjitha vendet e BE-së.',
+                specs: [
+                    { label: 'Interneti', value: '10GB High-Speed' },
+                    { label: 'Kohëzgjatja', value: '15 Ditë' },
+                    { label: 'Shtrirja', value: 'Vendet e BE-së' },
+                    { label: 'Rrjeti', value: '4G/LTE' },
+                    { label: 'Hotspot', value: 'Aktivizuar' },
+                    { label: 'Aktivizimi', value: 'QR Code Instant' }
+                ],
+                included: [
+                    { label: 'Asistencë 24/7', value: 'Po' },
+                    { label: 'Rimbushje e Disponueshme', value: 'Po' },
+                    { label: 'Ruajtja e të Dhënave', value: 'Jo' },
+                    { label: 'Thirrjet me zë', value: 'Vetëm me Internet' }
+                ]
+            }
+        };
 
 
         function loadProductDetails() {
@@ -247,11 +273,13 @@
 
             document.getElementById('product-name').textContent = product.name;
             document.getElementById('product-price').textContent = product.price;
-            document.getElementById('product-image').textContent = product.image;
+            const img = document.getElementById('product-img');
+    img.src = product.image;
+    img.alt = product.name;
             document.getElementById('product-description').textContent = product.description;
 
             const specsList = document.getElementById('product-specs-list');
-            specsList.innerHTML = product.specs.map(spec => 
+            specsList.innerHTML = product.specs.map(spec =>
                 `<li><span>${spec.label}:</span> ${spec.value}</li>`
             ).join('');
 
@@ -261,4 +289,5 @@
         loadProductDetails();
     </script>
 </body>
+
 </html>

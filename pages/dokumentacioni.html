@@ -1,434 +1,269 @@
 <!DOCTYPE html>
-<html><head><title>Dokumentimi i projektit final</title>
-<style type="text/css">
-A:hover 
-{
-	color: #000000; background-color: #33cc99
-}
+<html lang="sq">
 
-	.centerTitleSm
-	{
-	    font-family: "Arial Narrow", Arial, Helvetica, sans-serif; 
-	    font-size: 20pt; 
-	    font-weight: bold; 
-	    color: #000000; 
-	    text-align: center; 
-	    border-style: none
-        }
-		
-.unit 	{
-		font-weight: bold; 
-		font-size: 14pt; 
-		color: #ffffff; 
-		font-family: "Arial Narrow", Arial, Helvetica, sans-serif; 
-		background-color: #3399CC; 
-		text-align: left; 
-		line-height: normal
-		}
-	.centerTitle
-	{
-	    font-family: "Arial Narrow", Arial, Helvetica, sans-serif; 
-	    font-size: 28pt; 
-	    font-weight: bold; 
-	    color: #000000; 
-	    text-align: center; 
-	    border-style: none
-        }
+<head>
+  <meta charset="UTF-8">
+  <title>Dokumentimi i projektit final</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #000000;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+    }
 
-.leftSideHeading 
-{
-	font-weight: bold; 
-	font-size: 10pt; 
-	vertical-align: top; 
-	text-transform: none; 
-	color: #000000; 
-	font-style: normal; 
-	font-family: Verdana, Arial, Helvetica, sans-serif; 
-	text-align: right; 
-	font-variant: normal
-}
+    a {
+      color: #003300;
+      text-decoration: none;
+    }
 
-.centerText 
-{
-	font: 10pt Verdana, Arial, Helvetica, sans-serif; 
-	text-transform: none; 
-	color: #000000; 
-	text-align: justify
-}
+    a:hover {
+      color: #000000;
+      background-color: #33cc99;
+    }
 
-.sectHeading 
-{
-	font: 12pt Verdana, Arial, Helvetica, sans-serif; 
-	text-transform: none; 
-	color: #000000; 
-	text-align: justify;
-	border-bottom: 2pt solid #000000
-}
+    .centerTitleSm {
+      font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+      font-size: 20pt;
+      font-weight: bold;
+      color: #000000;
+      text-align: center;
+    }
 
-.section 
-{
-	font-weight: normal; 
-	font-size: x-small; 
-	color: #ffffcc; 
-	line-height: normal; 
-	font-style: normal; 
-	font-family: Verdana, Arial, Helvetica, sans-serif
-}
+    .centerTitle {
+      font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+      font-size: 28pt;
+      font-weight: bold;
+      color: #000000;
+      text-align: center;
+    }
 
-.centerLinks 
-{
-	font-weight: normal; 
-	font-size: 13pt; 
-	color: #000000; 
-	font-style: normal; 
-	font-family: Arial, Helvetica, sans-serif; 
-	background-color: #ffffff; 
-	text-align: left; 
-	font-variant: normal
-}
+    .unit {
+      font-weight: bold;
+      font-size: 14pt;
+      color: #ffffff;
+      font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+      background-color: #3399CC;
+      text-align: left;
+      line-height: normal;
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 5px;
+    }
 
-.navlink 
-{
-	font-size: 9pt; 
-	color: #ffffcc; 
-	font-family: Arial, Helvetica, sans-serif; 
-	text-decoration: none
-}
+    .sectionInfo {
+      font-size: 9pt;
+      color: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-.sectionInfo
-{
-	font-size: 9pt; 
-	color: #000000; 
-	font-family: Arial, Helvetica, sans-serif; 
-	text-decoration: none
-}
+    .navlink {
+      font-size: 9pt;
+      color: #ffffcc;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-table {
-	font-weight: normal; 
-	font-size: 10pt; 
-	color: #000000; font-style: normal; 
-	font-family: Verdana, Arial, Helvetica, sans-serif; FONT-VARIANT: normal
-}
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
 
-blockquote
-{
-	font: 10pt "Times New Roman", "Courier New", serif; 
-	text-transform: none; 
-	color: #000000; 
-	text-align: justify
-}
+    td {
+      padding: 3px;
+      font-size: 10pt;
+      color: #000000;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      vertical-align: top;
+    }
 
-TD {
-	font-weight: normal; 
-	font-size: 10pt; 
-	color: #000000; 
-	font-style: normal; 
-	font-family: Verdana, Arial, Helvetica, sans-serif; FONT-VARIANT: normal
-}
-      </style></head>
+    .nav-cell {
+      background-color: #3399cc;
+      color: #ffffcc;
+    }
 
-   <body leftmargin="130" topmargin="0" alink="#003300" bgcolor="#ffffff" link="#003300" marginheight="0" marginwidth="0" text="#000000" vlink="#003300">
-<center>
-   <span class="leftSideHeading">
-   </span>
-   
-  <table align="left" bgcolor="#66ccff" border="0" cellpadding="2" cellspacing="0" height="1477" width="722">
-    <tbody> 
-    <tr align="center" valign="top"> 
-        <td class="left" bordercolor="#ffffff" bgcolor="#66ccff" height="90" width="0%">&nbsp;</td>
-        <td class="sectionInfo" bordercolor="#ffffff" bgcolor="#66ccff" height="90" valign="center" width="15%">&nbsp; 
-        </td>
-        <td class="left" bordercolor="#ffffff" bgcolor="#3399cc" height="90" width="0%">&nbsp;</td>
-        <td class="left" bordercolor="#ffffff" bgcolor="#66ccff" height="90" width="0%">&nbsp;</td>
-        <td class="left" bordercolor="#ffffff" bgcolor="#66ccff" height="90" width="83%"> 
-          <font color="#000000" face="Arial, Helvetica, sans-serif" size="+3">Fakulteti i shkencave Kompjuterike</font> <br> <br> <a href="http://www.uni-prizren.com">
-		 Dizajn Softuer <br>
-         Univerziteti i Prizrenit "Ukshin Hoti", Prizren, Kosove </a></td>
-      <td class="left" colspan="3" bordercolor="#ffffff" bgcolor="#66ccff" height="90" valign="center" width="5%">&nbsp; </td>
+    .white-cell {
+      background-color: #ffffff;
+    }
+
+    .table-bordered td {
+      border: 1px solid #000000;
+    }
+
+    .table-bordered .header-row {
+      background-color: #66ccff;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .table-bordered .example-row {
+      background-color: #3399cc;
+      color: #ffffff;
+    }
+
+    .table-bordered a {
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <table style="width:100%;">
+    <!-- Header -->
+    <tr>
+      <td colspan="8" style="background-color:#66ccff; width:100%; padding:20px; text-align:center;">
+        <div style="font-size:24px; font-family:Arial, Helvetica, sans-serif; color:#000000; width:100%;">
+          Fakulteti i shkencave Kompjuterike
+        </div>
+        <a href="http://www.uni-prizren.com" style="text-decoration:none; color:#000000; width:100%;">
+          Dizajn Softuer <br>
+          Univerziteti i Prizrenit "Ukshin Hoti", Prizren, Kosove
+        </a>
+      </td>
     </tr>
-    <tr align="center"> 
-        <td bgcolor="#3399cc" height="15" width="0%">&nbsp;</td>
-        <td bgcolor="#3399cc" width="17%">&nbsp;</td>
-      <td bgcolor="#3399cc" width="0%">&nbsp;</td>
-      <td bgcolor="#3399cc" width="0%">&nbsp;</td>
-      <td class="navLinks" bgcolor="#3399cc" width="83%"><font class="navLinks" color="#ffffcc" face="Verdana, Arial, Helvetica, sans-serif" size="2">| 
-	  <a class="navlink" href="javascript:this.close()" target="_self">Mbylle kete dritare</a> 
-        | 
-        <script language="Javascript">
-        <!--
-	  if(window.print)
-	  {
-	     document.write
-	     (
-	       '<A class="navlink" ' +
-	       'href="javascript:window.print();" target="_self">' +
-	       'Printoje dokumentin' +
-	       '</a>'
-	     );
-	  }
-	// -->
-        </script><a class="navlink" href="javascript:window.print();" target="_self"></a>
-        |</font></td>
-      <td colspan="3" bgcolor="#3399cc" width="5%">&nbsp;</td>
+
+    <!-- Navigation -->
+    <tr>
+      <td colspan="8" class="nav-cell" style="padding:5px;">
+        | <a class="navlink" href="javascript:this.close()">Mbylle kete dritare</a> |
+        <a class="navlink" href="javascript:window.print();">Printoje dokumentin</a> |
+      </td>
     </tr>
-    <tr> 
-      <td bgcolor="#66ccff" height="15" width="0%">&nbsp;</td>
-      <td bgcolor="#66ccff" height="15" width="17%">&nbsp;</td>
-      <td bgcolor="#3399cc" height="15" width="0%">&nbsp;</td>
-      <td bgcolor="#ffffff" height="15" width="0%">&nbsp;</td>
-      <td bgcolor="#ffffff" height="15" width="83%">&nbsp;</td>
-      <td colspan="3" bgcolor="#ffffff" height="15" width="5%">&nbsp; </td>
+
+    <!-- Spacer -->
+    <tr>
+      <td colspan="8" class="white-cell" style="height:15px;">&nbsp;</td>
     </tr>
-    <tr> 
-      <td bgcolor="#66ccff" height="15" width="0%">&nbsp;</td>
-      <td class="leftSideHeading" align="left" bgcolor="#66ccff" width="17%">&nbsp;</td>
-      <td bgcolor="#3399cc" width="0%">&nbsp;</td>
-      <td bgcolor="#ffffff" width="0%">&nbsp;</td>
-      <td align="center" bgcolor="#ffffff" valign="top" width="83%"> 
-        <h1 class="centerTitle"><font color="#ffbbf5">Tema e projektit: <br /><u>"Web faqe per e-commerc"</u></font></h1>
-        <h1 class="centerTitleSm"><i>Autoret:Emri mbiemri ID:id e studentit</i></h1>
-        <h1 class="centerTitleSm"><i>Autoret:Emri mbiemri ID:id e studentit</i></h1>
-        <h1 class="centerTitleSm"><i>Autoret:Emri mbiemri ID:id e studentit</i></h1>
-     
-	 </td>
-      <td colspan="3" bgcolor="#ffffff" width="5%">&nbsp;</td>
+
+    <!-- Project title -->
+    <tr>
+      <td colspan="8" class="white-cell" style="text-align:center; padding:20px;">
+        <h1 class="centerTitle" style="color:#ffbbf5;">Tema e projektit: <br><u>"Web faqe per e-commerc"</u></h1>
+        <h2 class="centerTitleSm"><i>Autoret: Emri mbiemri ID: id e studentit</i></h2>
+        <h2 class="centerTitleSm"><i>Autoret: Emri mbiemri ID: id e studentit</i></h2>
+        <h2 class="centerTitleSm"><i>Autoret: Emri mbiemri ID: id e studentit</i></h2>
+      </td>
     </tr>
-    <tr> 
-      <td bgcolor="#66ccff" height="15" width="0%">&nbsp;</td>
-      <td class="leftSideHeading" align="left" bgcolor="#66ccff" width="17%">&nbsp;</td>
-      <td bgcolor="#3399cc" width="0%">&nbsp;</td>
-      <td bgcolor="#ffffff" width="0%">&nbsp;</td>
-      <td class="centerText" bgcolor="#ffffff" valign="top" width="83%">&nbsp;</td>
-      <td colspan="3" bgcolor="#ffffff" width="5%">&nbsp;</td>
-    </tr>
-    <tr> 
-      <td bgcolor="#66ccff" height="15" width="0%">&nbsp;</td>
-      <td class="leftSideHeading" align="left" bgcolor="#66ccff" width="17%">&nbsp;</td>
-      <td bgcolor="#3399cc" width="0%">&nbsp;</td>
-      <td bgcolor="#ffffff" width="0%">&nbsp;</td>
-      <td class="centerText" bgcolor="#ffffff" valign="top" width="83%">&nbsp;</td>
-      <td colspan="3" bgcolor="#ffffff" width="5%">&nbsp; </td>
-    </tr>
-    <tr> 
-      <td align="right" bgcolor="#66ccff" height="150" valign="top" width="0%">&nbsp;</td>
-      <td class="leftSideHeading" align="left" bgcolor="#66ccff" valign="top" width="17%"><font color="#000000">&nbsp;</font></td>
-      <td align="right" bgcolor="#3399cc" valign="top" width="0%">&nbsp;</td>
-      <td align="right" bgcolor="#ffffff" valign="top" width="0%">&nbsp;</td>
-      <td class="centerText" bgcolor="#ffffff" valign="top" width="83%"> 
-        <!--BEGIN PASTE -->
-        <div class="unit"> Pershkrimi i projektit final</div>
-        <p>
-Pershkruani projektin tuaj!	
-		</p>
-		<a name="opt1">
-        <div class="unit"> Percaktimi i audiences</div>
-		</a> 
-        <p>
-	Tregoni kush do jene shfrytezuesit e kesaj web faqeje dhe pershkruani ato shftytezues dhe cka kane mundsi te bejne ata!
-		</p>
-		<a name="opt2">
-        <div class="unit"> Lista e veglave</div>
-		</a> 
-        <p>
-	<b>Veglat qe më nevoiten jane:</b><br />
-<br />
-Tregoni cka ju nevoitet per te ndertuar web aplikacionin (p.sh. html, css .....) dhe cka jane ato shkruani pershkrimin e tyre.
-  <a name="#projReq">
+
+    <!-- Project content -->
+    <tr>
+      <td colspan="8" class="white-cell" style="padding:10px;">
+        <div class="unit">Pershkrimi i projektit final</div>
+        <p>Pershkruani projektin tuaj!</p>
+
+        <div class="unit">Percaktimi i audiences</div>
+        <p>Tregoni kush do jene shfrytezuesit e kesaj web faqeje dhe pershkruani ato shfrytezues dhe cka kane mundsi te
+          bejne ata!</p>
+
+        <div class="unit">Lista e veglave</div>
+        <p><b>Veglat qe mï¿½ nevoiten jane:</b><br>
+          Tregoni cka ju nevoitet per te ndertuar web aplikacionin (p.sh. html, css .....) dhe cka jane ato shkruani
+          pershkrimin e tyre.</p>
+
         <div class="unit">Plani gjithperfshires i projektit</div>
-		</a> 
-  Pershkruani planin si do arini te realnizoni kete web faqe
-        </p>
+        <p>Pershkruani planin si do arini te realizoni kete web faqe</p>
+
         <div class="unit">Referencat</div>
-        <p><b>Burimet qe i kam shfritzuar per te ndertuar kte web faqe jane:</b>
+        <p><b>Burimet qe i kam shfritzuar per te ndertuar kte web faqe jane:</b></p>
 
-
-
-
-        <div class="unit"></div>
-        <div class="unit">Lista e pjeseve te kerkuara</div>
-          
-          <p> <i><b><u>UDHEZIM</u>: </b></i>Per cdo kerkese te projektit ne 
-          listen e meposhtme, shkruani adresen (URL-ne) ku gjendet ai element. 
-          Cdo link duhet te hapet ne faqe tjeter (_blank). Shikoni shembullin 
-          per sintaksen:<br>
-            <br>
-            <a name="Tabela"></a> 
-          <table border="1" cellpadding="3" cellspacing="0" width="554">
-          <tbody><tr bgcolor="#66ccff"> 
-            <td width="75"><font color="#ffffff"><b>Kerkesat</b></font></td>
-            <td width="192"><font color="#ffffff"><b>URL-ja e vendndodhjes</b></font></td>
+        <!-- Table of requirements -->
+        <a name="Tabela"></a>
+        <table class="table-bordered" style="width:100%;">
+          <tr class="header-row">
+            <td>Kerkesat</td>
+            <td>URL-ja e vendndodhjes</td>
           </tr>
-          <tr bgcolor="#3399cc"> 
-            <td width="75"><font color="#ffffff"><b>SHEMBULL</b>:<br>
-              Tabela te shfrytezuara ne planifikimin e faqes</font></td>
-              <td width="192"><p><font color="#ffffff"></font></p>
-                </td>
+          <tr class="example-row">
+            <td>SHEMBULL: Tabela te shfrytezuara ne planifikimin e faqes</td>
+            <td>&nbsp;</td>
           </tr>
-		            <tr> 
-<td width="75">HTML 5 </td>
-            
-<td width="192"><p><font color="#ffffff"><a href="index.html" target="_blank">
-index.html</a>
-<a href="index.html" target="_blank">
-index.html</a>
-<a href="index.html" target="_blank">
-index.html</a></font></p></td>
+          <tr>
+            <td>HTML 5</td>
+            <td>
+              <a href="index.html" target="_blank">index.html</a>
+              <a href="index.html" target="_blank">index.html</a>
+              <a href="index.html" target="_blank">index.html</a>
+            </td>
           </tr>
-          <tr> 
-            <td width="75">Background Color/Image</td>
-            <td width="192"><p><font color="#ffffff"><a href="" target="_blank">vendosni linkun e faqes</a></font></p>
-      </td>
-	 </tr>
-          <tr> 
-            <td width="75">Perdorimin e tabelave</td>
-            <td width="192"><p><font color="#ffffff"><a href="" target="_blank">vendosni linkun e faqes</a></font></p>
-			</td>
+          <tr>
+            <td>Background Color/Image</td>
+            <td><a href="" target="_blank">vendosni linkun e faqes</a></td>
           </tr>
-          <tr> 
-            <td width="75">Korniza per ndarjen e faqes</td>
-            <td width="192"><a href="" target="_blank">vendosni linkun e faqes</a></td>
+          <tr>
+            <td>Perdorimin e tabelave</td>
+            <td><a href="" target="_blank">vendosni linkun e faqes</a></td>
           </tr>
-          <tr> 
-            <td width="75">Ordered or Unordered List</td>
-            <td width="192"><p><font color="#ffffff"><a href="" target="_blank">vendosni linkun e faqes</a></font></p>
-			</td>
+          <tr>
+            <td>Korniza per ndarjen e faqes</td>
+            <td><a href="" target="_blank">vendosni linkun e faqes</a></td>
           </tr>
-          <tr> 
-            <td width="75">CSS</td>
-            <td width="192"><p><font color="#ffffff"><a href="" target="_blank">vendosni linkun e faqes</a></font></p></td>
+          <tr>
+            <td>Ordered or Unordered List</td>
+            <td><a href="" target="_blank">vendosni linkun e faqes</a></td>
           </tr>
-          <tr> 
-            <td width="75">JavaScript</td>
-            <td width="192"><a href="" target="_blank">vendosni linkun e faqes</a></td>
+          <tr>
+            <td>CSS</td>
+            <td><a href="" target="_blank">vendosni linkun e faqes</a></td>
           </tr>
-         
-          
-            <td width="75">Shembull i komentimit te mire te dokumentit</td>
-            <td width="192"><p><font color="#ffffff"><a href="permbajtje2.html" target="_blank">vendosni linkun e faqes</a></font></p></td>
+          <tr>
+            <td>JavaScript</td>
+            <td><a href="" target="_blank">vendosni linkun e faqes</a></td>
           </tr>
-        
-          <tr> 
-            <td width="75">Perdorimi i Linqeve</td>
-            <td width="192"><p><font color="#ffffff"><a href="" target="_blank">vendosni linkun e faqes</a> </font></p></td>
+          <tr>
+            <td>Shembull i komentimit te mire te dokumentit</td>
+            <td><a href="permbajtje2.html" target="_blank">vendosni linkun e faqes</a></td>
           </tr>
-          <tr> 
-            <td width="75">Linqet perbrenda faqes</td>
-            <td width="192"><p><font color="#ffffff"><a href="l" target="_blank">vendosni linkun e faqes</a></font></p></td>
-          </tr> 
-          <tr> 
-            <td width="75">Tabelat ne CSS</td>
-            <td width="192"><p><font color="#ffffff"><a href="" target="_blank">vendosni linkun e faqes</a></font></p></td>
+          <tr>
+            <td>Perdorimi i Linqeve</td>
+            <td><a href="" target="_blank">vendosni linkun e faqes</a></td>
           </tr>
-          <tr> 
-            <td width="75">Header</td>
-            <td width="192"><p><font color="#ffffff"><a href="" target="_blank">vendosni linkun e faqes</a></font></p></td>
+          <tr>
+            <td>Linqet perbrenda faqes</td>
+            <td><a href="l" target="_blank">vendosni linkun e faqes</a></td>
           </tr>
-		            <tr> 
-            <td width="75">Footer</td>
-            <td width="192"><p><font color="#ffffff"><a href="" target="_blank">vendosni linkun e faqes</a></font></p></td>
+          <tr>
+            <td>Tabelat ne CSS</td>
+            <td><a href="" target="_blank">vendosni linkun e faqes</a></td>
           </tr>
-          <tr> 
-            <td width="75">Ndërimi i madhesis se imazhit</td>
-            <td width="192"><p><font color="#ffffff"><a href="" target="_blank">vendosni linkun e faqes</a></font></p></td>
+          <tr>
+            <td>Header</td>
+            <td><a href="" target="_blank">vendosni linkun e faqes</a></td>
           </tr>
-		  
-<tr><td width="75">HTML Media<br />
-HTML Video<br />
-HTML Audio<br />
-HTML Plug-ins<br />
-HTML YouTube</td>
-<td width="192"><p><font color="#ffffff"><a href="" target="_blank">vendosni linkun e faqes</a></font></p></td>
+          <tr>
+            <td>Footer</td>
+            <td><a href="" target="_blank">vendosni linkun e faqes</a></td>
           </tr>
-		  
-		  <tr><td width="75">Krijimi i formave me HTML</td>
-<td width="192"><p><font color="#ffffff"><a href="" target="_blank">vendosni linkun e faqes</a></font></p></td>
+          <tr>
+            <td>Ndï¿½rimi i madhesis se imazhit</td>
+            <td><a href="" target="_blank">vendosni linkun e faqes</a></td>
           </tr>
-		  <tr><td width="75">CSS 3</td>
-<td width="192"><p><font color="#ffffff"><a href="" target="_blank">vendosni linkun e faqes</a></font></p></td>
+          <tr>
+            <td>HTML Media / Video / Audio / Plug-ins / YouTube</td>
+            <td><a href="" target="_blank">vendosni linkun e faqes</a></td>
           </tr>
-
-
-        </tbody></table>
-          <!--END PASTE-->
-      </p></td>
-      <td colspan="3" bgcolor="#ffffff" width="5%"> 
-        <p>&nbsp;</p>
+          <tr>
+            <td>Krijimi i formave me HTML</td>
+            <td><a href="" target="_blank">vendosni linkun e faqes</a></td>
+          </tr>
+          <tr>
+            <td>CSS 3</td>
+            <td><a href="" target="_blank">vendosni linkun e faqes</a></td>
+          </tr>
+        </table>
       </td>
     </tr>
-    <tr> 
-      <td bgcolor="#66ccff" height="15" width="0%">&nbsp;</td>
-      <td class="leftSideHeading" align="left" bgcolor="#66ccff" width="17%">&nbsp;</td>
-      <td bgcolor="#3399cc" width="0%">&nbsp;</td>
-      <td bgcolor="#ffffff" width="0%">&nbsp;</td>
-      <td class="centerText" bgcolor="#ffffff" valign="top" width="83%">&nbsp;</td>
-      <td colspan="3" bgcolor="#ffffff" width="5%">&nbsp;</td>
+
+    <!-- Footer -->
+    <tr>
+      <td colspan="8" style="text-align:center; padding-top:20px; background-color:#ffffff;">
+        &copy; Fakulteti i shkencave Kompjuterike<br>
+        Hyrje ne web gjuhe dhe teknologji
+      </td>
     </tr>
-    <tr> 
-      <td bgcolor="#66ccff" height="15" width="0%">&nbsp;</td>
-      <td class="leftSideHeading" align="left" bgcolor="#66ccff" width="17%">&nbsp;</td>
-      <td bgcolor="#3399cc" width="0%">&nbsp;</td>
-      <td bgcolor="#ffffff" width="0%">&nbsp;</td>
-      <td class="centerText" bgcolor="#ffffff" valign="top" width="83%">&nbsp;</td>
-      <td colspan="3" bgcolor="#ffffff" width="5%">&nbsp; </td>
-    </tr>
-    <tr> 
-      <td bgcolor="#66ccff" height="35" width="0%">&nbsp;</td>
-      <td class="leftSideHeading" bgcolor="#66ccff" valign="top" width="17%">&nbsp;</td>
-      <td bgcolor="#3399cc" width="0%">&nbsp;</td>
-      <td bgcolor="#ffffff" width="0%">&nbsp;</td>
-      <td class="centerText" bgcolor="#ffffff" valign="top" width="83%">&nbsp;</td>
-      <td colspan="3" bgcolor="#ffffff" width="5%">&nbsp;</td>
-    </tr>
-    <tr> 
-      <td bgcolor="#66ccff" height="15" width="0%">&nbsp;</td>
-      <td class="leftSideHeading" align="left" bgcolor="#66ccff" width="17%">&nbsp;</td>
-      <td bgcolor="#3399cc" width="0%">&nbsp;</td>
-      <td bgcolor="#ffffff" width="0%">&nbsp;</td>
-      <td class="centerText" bgcolor="#ffffff" valign="top" width="83%">&nbsp;</td>
-      <td colspan="3" bgcolor="#ffffff" width="5%">&nbsp;</td>
-    </tr>
-    <tr> 
-      <td bgcolor="#66ccff" height="15" width="0%">&nbsp;</td>
-      <td class="leftSideHeading" align="left" bgcolor="#66ccff" width="17%">&nbsp;</td>
-      <td bgcolor="#3399cc" width="0%">&nbsp;</td>
-      <td bgcolor="#ffffff" width="0%">&nbsp;</td>
-      <td class="centerText" bgcolor="#ffffff" valign="top" width="83%">&nbsp;</td>
-      <td colspan="3" bgcolor="#ffffff" width="5%">&nbsp;</td>
-    </tr>
-    <tr> 
-      <td bgcolor="#66ccff" width="0%">&nbsp;</td>
-      <td class="leftSideHeading" bgcolor="#66ccff" valign="top" width="17%">&nbsp;</td>
-      <td bgcolor="#3399cc" width="0%">&nbsp;</td>
-      <td bgcolor="#ffffff" width="0%">&nbsp;</td>
-      <td class="centerText" bgcolor="#ffffff" valign="top" width="83%">&nbsp;</td>
-      <td colspan="3" bgcolor="#ffffff" width="5%">&nbsp;</td>
-    </tr>
-    <tr> 
-      <td bgcolor="#66ccff" height="15" width="0%">&nbsp;</td>
-      <td class="leftSideHeading" align="left" bgcolor="#66ccff" width="17%">&nbsp;</td>
-      <td bgcolor="#3399cc" width="0%">&nbsp;</td>
-      <td bgcolor="#ffffff" width="0%">&nbsp;</td>
-      <td class="centerText" bgcolor="#ffffff" valign="top" width="83%">&nbsp;</td>
-      <td colspan="3" bgcolor="#ffffff" width="5%">&nbsp;</td>
-    </tr>
-    <tr> 
-      <td bgcolor="#66ccff" height="15" width="0%">&nbsp;</td>
-      <td class="leftSideHeading" align="left" bgcolor="#66ccff" width="17%">&nbsp;</td>
-      <td bgcolor="#3399cc" width="0%">&nbsp;</td>
-      <td bgcolor="#ffffff" width="0%">&nbsp;</td>
-      <td class="centerText" bgcolor="#ffffff" valign="top" width="83%">&nbsp;</td>
-      <td colspan="3" bgcolor="#ffffff" width="5%">&nbsp; </td>
-    </tr>
-    <tr valign="bottom"> 
-      <td bgcolor="#66ccff" width="0%">&nbsp;</td>
-      <td class="leftSideHeading" bgcolor="#66ccff" valign="top" width="17%">&nbsp;</td>
-      <td bgcolor="#3399cc" width="0%">&nbsp;</td>
-      <td bgcolor="#ffffff" width="0%">&nbsp;</td>
-      <td align="center" bgcolor="#ffffff" width="83%"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">© Fakulteti i shkencave Kompjuterike<br />Hyrje ne web gjuhe dhe teknologji</font></td>
-      <td colspan="3" bgcolor="#ffffff" width="5%">&nbsp;</td>
-    </tr>
-    </tbody> 
   </table>
-</center>
+
 </body>
+
 </html>
