@@ -405,33 +405,6 @@ body {
     text-align: center;
 }
 
-.countries-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.country-card {
-    background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 159, 67, 0.1));
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.country-card:hover {
-    transform: scale(1.05);
-}
-
-.country-card .flag {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.country-card h4 {
-    color: #333;
-}
-
 .steps-container {
     max-width: 800px;
     margin: 0 auto;
@@ -487,10 +460,78 @@ body {
     font-style: normal;
 }
 
-.faq-container {
+.description h3 {
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #1a3122, #3e0936);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.description p {
+    font-size: 1rem;
+    background: linear-gradient(to right, #3e0936, #1a3122);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.description h3 {
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #1a3122, #3e0936);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.countries h4 {
+    font-size: 1.25rem;
+    background: linear-gradient(to right, #3e0936, #1a3122);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.countries p {
     max-width: 800px;
     margin: 0 auto;
 }
+
+.country-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.country-list li {
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(to left, #d02aca, #0ed4d8);
+  border-radius: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
 
 .faq-item {
     margin-bottom: 15px;
@@ -717,7 +758,7 @@ body {
 }
 
 .product-detail-info .description {
-    color: #666;
+    color: #8a0101;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -741,7 +782,7 @@ body {
 .product-specs li {
     padding: 10px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    color: #666;
+    color: #2a2323;
     display: flex;
     justify-content: space-between;
 }
@@ -800,6 +841,24 @@ body {
   transform: scale(1.1);
   transition: 0.3s ease;
 }
+
+.coverage-layout {
+  display: flex;
+  gap: 2rem;
+}
+
+#map {
+  flex: 0 0 60%;
+  height: 500px;
+  border-radius: 15px;
+}
+
+.countries {
+  flex: 1;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
 
 @media (max-width: 768px) {
     .site-title {

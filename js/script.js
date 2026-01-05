@@ -55,9 +55,10 @@ function setActiveNavLink() {
     });
 }
 
-// Initialize map
-// Initialize map centered on Europe
+
 const map = L.map('map').setView([54, 15], 4); // [lat, lng], zoom
+setTimeout(() => map.invalidateSize(), 100);
+
 
 
 // Optional: base tiles for context
@@ -78,6 +79,7 @@ function style(feature) {
     fillOpacity: 0.7
   };
 }
+
 
 // Load GeoJSON (world countries)
 fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json')
