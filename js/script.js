@@ -56,12 +56,11 @@ function setActiveNavLink() {
 }
 
 
-const map = L.map('map').setView([54, 15], 4); // [lat, lng], zoom
+const map = L.map('map').setView([54, 15], 4); 
 setTimeout(() => map.invalidateSize(), 100);
 
 
 
-// Optional: base tiles for context
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap contributors'
 }).addTo(map);
@@ -69,9 +68,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 const selectedCountries = ['ALB','MNE','BIH','MKD','DEU','CHE','FRA','TUR'];
 
 
-// Styling function
 function style(feature) {
-  const isSelected = selectedCountries.includes(feature.id); // 'id' in GeoJSON is ISO code
+  const isSelected = selectedCountries.includes(feature.id); 
   return {
     fillColor: isSelected ? '#ab438f' : '#ffffff',
     weight: 1,
@@ -81,7 +79,6 @@ function style(feature) {
 }
 
 
-// Load GeoJSON (world countries)
 fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json')
   .then(res => res.json())
   .then(data => {
