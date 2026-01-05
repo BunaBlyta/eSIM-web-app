@@ -34,6 +34,7 @@
 
                 <div class="product-detail-info">
                     <h1 id="product-name">Oferta EU eSIM</h1>
+                   
                     <div class="price" id="product-price">€19.99</div>
                     <p class="description" id="product-description">
                         Plani më i gjerë.
@@ -89,7 +90,7 @@
         <div class="footer-content">
             <div class="footer-links">
                 <a href="contact.html">Na Kontaktoni</a>
-                <a href="about.html">Për ne/a>
+                <a href="about.html">Për ne</a>
                     <a href="faq.html">FAQ</a>
                     <a href="dokumentacioni.html">Dokumentacioni</a>
                     <a href="terms.html">Politikat e Përdorimit</a>
@@ -268,7 +269,7 @@
 
         function loadProductDetails() {
             const urlParams = new URLSearchParams(window.location.search);
-            const productId = urlParams.get('id') || 'global';
+            const productId = urlParams.get('id') || 'kosovo';
             const product = products[productId] || products.global;
 
             document.getElementById('product-name').textContent = product.name;

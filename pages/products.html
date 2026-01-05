@@ -1,46 +1,79 @@
 <!DOCTYPE html>
+<!-- Dokument HTML5 për faqen "Produktet" -->
 <html lang="en">
 
 <head>
+    <!-- Meta tags për karaktere dhe responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titulli që shfaqet në tab të shfletuesit -->
     <title>Produktet - Pika eSIM</title>
+
+    <!-- Lidhja me stylesheet-in kryesor CSS -->
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Lidhje për Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonti Atkinson Hyperlegible për lexueshmëri më të mirë -->
     <link
         href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- Titulli kryesor i faqes / brand name -->
     <h1 class="site-title">Pika eSIM</h1>
 
+    <!-- Navigimi kryesor i faqes -->
     <nav class="navbar">
         <ul>
+            <!-- Link për ballinë -->
             <li><a href="../index.html">Ballina</a></li>
+
+            <!-- Link aktiv për faqen aktuale -->
             <li><a href="products.html" class="active">Produktet</a></li>
+
+            <!-- Link për shtrirjen -->
             <li><a href="coverage.html">Shtrirja</a></li>
+
+            <!-- Link për mënyrën e funksionimit -->
             <li><a href="howItWorks.html">Si Funksionon</a></li>
         </ul>
     </nav>
 
+    <!-- Seksioni kryesor i përmbajtjes -->
     <main class="main-card">
+
+        <!-- Titulli i faqes -->
         <h2 class="page-title">Ofertat tona eSIM</h2>
 
+        <!-- Grid që përmban të gjitha produktet -->
         <div class="products-grid">
+
+            <!-- Kartë individuale e produktit -->
             <div class="product-card">
+
+                <!-- Seksioni i imazhit të produktit -->
                 <div class="product-image">
                     <img src="../images/kosova.png" alt="Kosova" />
                 </div>
+
+                <!-- Informacioni i produktit -->
                 <div class="product-info">
                     <h3>Oferta Kosovë</h3>
                     <div class="price">€9.99</div>
                     <div class="details">7GB Internet | 14 Ditë</div>
+
+                    <!-- Link që çon në faqen e detajeve të produktit -->
                     <a href="productDetails.html?id=kosovo" class="buy-button">Shiko Detajet</a>
                 </div>
             </div>
 
+            <!-- Produkti: Shqipëri -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="../images/shqiperia.png" alt="Shqiperia" />
@@ -53,6 +86,7 @@
                 </div>
             </div>
 
+            <!-- Produkti: Turqi -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="../images/turqia.png" alt="Turqia" />
@@ -65,6 +99,7 @@
                 </div>
             </div>
 
+            <!-- Produkti: Ballkan -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="../images/ballkani.png" alt="Ballkani" />
@@ -77,6 +112,7 @@
                 </div>
             </div>
 
+            <!-- Produkti: Gjermani -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="../images/gjermania.jpg" alt="Gjermania" />
@@ -89,6 +125,7 @@
                 </div>
             </div>
 
+            <!-- Produkti: Zvicërr -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="../images/zvicrra.jpg" alt="Zvicrra">
@@ -101,6 +138,7 @@
                 </div>
             </div>
 
+            <!-- Produkti: Francë -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="../images/franca.png" alt="Franca">
@@ -113,6 +151,7 @@
                 </div>
             </div>
 
+            <!-- Produkti: Europë -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="../images/europa.png" alt="Europa">
@@ -128,8 +167,11 @@
         </div>
     </main>
 
+    <!-- Footer i faqes -->
     <footer class="footer">
         <div class="footer-content">
+
+            <!-- Linket në footer -->
             <div class="footer-links">
                 <a href="contact.html">Na Kontaktoni</a>
                 <a href="about.html">Për ne</a>
@@ -137,12 +179,15 @@
                 <a href="dokumentacioni.html">Dokumentacioni</a>
                 <a href="terms.html">Politikat e Përdorimit</a>
             </div>
+
+            <!-- Të drejtat e autorit -->
             <div class="footer-copyright">
                 &copy; 2026 Pika eSIM. Të gjitha të drejtat e rezervuara.
             </div>
         </div>
     </footer>
 
+    <!-- Lidhja me JavaScript-in kryesor -->
     <script src="../js/script.js"></script>
 </body>
 
