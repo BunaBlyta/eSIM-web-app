@@ -1,47 +1,61 @@
-# Pika eSIM
+# Web Page for eSIM Service (Pika eSIM)
 
 ## Project Overview
-Pika eSIM is a simple website created as a final web development project.  
-The goal of the project is to present eSIM offers for different countries in a clear and easy-to-use way.
+This is a **university project** that involves creating a **web page for Pika eSIM**, a service providing electronic SIM (eSIM) internet packages for different regions.  
 
-The website is built using only HTML, CSS, and JavaScript.
+The website allows users to:  
+
+- Browse available eSIM products  
+- View detailed product information  
+- Check service coverage areas  
+- Contact support for assistance  
+
+The goal of this project is to demonstrate practical skills in **web development** using HTML, CSS, and JavaScript, while creating a functional and user-friendly website.
 
 ---
 
-## Purpose of the Website
-The website is meant for people who travel and need mobile internet abroad.  
-Users can view available eSIM plans, see details for each offer, and learn how eSIM works.
-
----
 
 ## Technologies Used
-- HTML5 for the structure of the website  
-- CSS3 for styling, layout, and responsiveness  
-- JavaScript for loading product details dynamically  
+- **HTML5** – for website structure and content  
+- **CSS3** – for styling, layout, and responsive design  
+- **JavaScript** – for dynamic elements and user interactions  
+- **Visual Studio Code** – code editing  
+- **Web Browser** – testing and viewing the website  
 
 ---
 
-## Pages Included
-- Home page  
-- Products  
-- Product details  
-- Coverage  
-- How it works  
-- About us  
+## Project Structure
+The project includes multiple pages such as:  
+- Home / Index  
+- Products & Product Details  
+- Coverage Map  
+- About Us  
+- Contact Form  
 - FAQ  
-- Contact  
-- Documentation  
+- How it Works  
+- Terms & Policies  
+
+The site is built with structured HTML, styled with CSS, and enhanced with JavaScript for interactivity. It is designed to be clear, informative, and user-friendly.
 
 ---
 
-## Features
-- Navigation bar and footer on all pages  
-- Product cards with images and prices  
-- Product details page using JavaScript  
-- Tables for specifications and included features  
-- Forms created with HTML  
-- Responsive layout using media queries  
+
+## References
+- MDN Web Docs (HTML, CSS, JavaScript)  
+- Google Fonts  
+- OpenStreetMap / Leaflet (for interactive maps)  
+- Course materials and exercises from HTML & CSS lectures  
 
 ---
 
-## Folder Structure
+## Usage
+1. Open the project folder in a code editor such as **Visual Studio Code**.  
+2. Open `index.html` in a web browser.  
+3. Navigate through the website to explore products, coverage, and other information.  
+
+---
+
+## Notes
+- The website is responsive and works across different devices.  
+- All functionality is implemented locally using standard web technologies.  
+- This project was completed as part of the university course requirements in **Web Development**.
