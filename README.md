@@ -59,3 +59,4 @@ The site is built with structured HTML, styled with CSS, and enhanced with JavaS
 - The website is responsive and works across different devices.  
 - All functionality is implemented locally using standard web technologies.  
 - This project was completed as part of the university course requirements in **Web Development**.
+- Live demo: https://bunablyta.github.io/eSIM-web-app/
